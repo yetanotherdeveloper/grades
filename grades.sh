@@ -22,4 +22,4 @@ set arrow from 1,kasa to 6,kasa nohead dashtype 3;
 set label sprintf(\"Aktualne stypendium: %.2fzl\",kasa) at 2,kasa+5;
 set xlabel \"Srednia ocen\";
 set ylabel \"wysokosc stypendium\";
-plot 60.0*( (x - thrs) > 0 ? (x- thrs): 0) title \"Stypendium\";"
+plot 60.0*( (x - thrs) > 0 ? (x- thrs): 0) title \"Stypendium\" lw 4;"
