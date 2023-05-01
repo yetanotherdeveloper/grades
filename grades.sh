@@ -15,11 +15,11 @@ set title \"Stypendium za $title\";
 set xrange[1:6];
 thrs=4.0;
 x=(($1+$2+$3+$4)/4.0);
-kasa=60.0*( (x - thrs) > 0 ? (x- thrs): 0);
-set arrow from 1,60*(5-thrs) to 6,60*(5-thrs) nohead dashtype 3;
-set arrow from 1,60*(4.0-thrs) to 6,60*(4.0-thrs) nohead dashtype 3;
+kasa=120.0*( (x - thrs) > 0 ? (x- thrs): 0);
+set arrow from 1,120*(5-thrs) to 6,120*(5-thrs) nohead dashtype 3;
+set arrow from 1,120*(4.0-thrs) to 6,120*(4.0-thrs) nohead dashtype 3;
 set arrow from 1,kasa to 6,kasa nohead dashtype 3;
 set label sprintf(\"Aktualne stypendium: %.2fzl\",kasa) at 2,kasa+5;
 set xlabel \"Srednia ocen\";
 set ylabel \"wysokosc stypendium\";
-plot 60.0*( (x - thrs) > 0 ? (x- thrs): 0) title \"Stypendium\" lw 4;"
+plot 120.0*( (x - thrs) > 0 ? (x- thrs): 0) title \"Stypendium\" lw 4;"

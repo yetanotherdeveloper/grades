@@ -1,16 +1,17 @@
 # run this program with: octave grades.m
 # Put grades here 
-grades = [ 5.54 
-3.5
-3.83
-4.33
-5.67
-4.79
-3.49
-3.11
-5.60
-6
-5
+grades = [ 6
+5.79
+5.62
+5.37
+3.86
+5.70
+4.18
+5.86
+4.04
+4.14
+5.76
+5.80
 ]
 
 function [ out ] = grade_round(num)
